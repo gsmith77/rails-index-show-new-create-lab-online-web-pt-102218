@@ -1,1 +1,2 @@
-<%= @coupons.to_s %>
+<% @coupons.each do |coupon|%>
+  <%= link_to coupon.to_s, coupon_path(coupon) %>
